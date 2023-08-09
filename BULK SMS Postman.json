@@ -1,0 +1,189 @@
+{
+    "info": {
+        "_postman_id": "150eea8f-9e0a-471e-830e-9335a8c358ee",
+        "name": "BULK SMS",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": "# BULK SMS API Documentation\n\n## Creating an account\n\n### Request\n\n- Method: POST\n- URL: `https://bulk-sms-production.up.railway.app/api/v1/account/new`\n\n#### Body\n\n```json\n{\n\"phone\": \"07XXXXXXXX\"\n}\n```\n\n## Credit money to your account\n\n### Request\n\n- Method: POST\n- URL: `https://bulk-sms-production.up.railway.app/api/v1/account/pay`\n\n#### Headers\n\n- apikey: addyourapikeyhere\n\n#### Body\n\n```json\n{\n\"phone\": \"07XXXXXXXX\",\n\"amount\": 50\n}\n```\n\n## Check your account balance\n\n### Request\n\n- Method: POST\n- URL: `https://bulk-sms-production.up.railway.app/api/v1/account/balance`\n\n#### Headers\n\n- apikey: addyourapikeyhere\n\n#### Body\n\n```json\n{\n\"phone\": \"07XXXXXXXX\"\n}\n```\n\n## Send a message to one recipient\n\n### Request\n\n- Method: POST\n- URL: `https://bulk-sms-production.up.railway.app/api/v1/sms/send`\n\n#### Headers\n\n- apikey: addyourapikeyhere\n\n#### Body\n\n```json\n{\n\"phone\": \"07XXXXXXXX\",\n\"message\": \"Hello there !\",\n\"recipient\": [\"07XXXXXXXX\"]\n}\n```\n\n## Send a message to many recipients\n\n### Request\n\n- Method: POST\n- URL: `https://bulk-sms-production.up.railway.app/api/v1/sms/send`\n\n#### Headers\n\n- apikey: addyourapikeyhere\n\n#### Body\n\n```json\n{\n\"phone\": \"07XXXXXXXX\",\n\"message\": \"Hello there !\",\n\"recipient\": [\"07XXXXXXXX\", \"07XXXXXXXX\"]\n}\n```\n\n\n\n## Side Notes\nPlease note that the `addyourapikeyhere` value in the headers should be replaced with your actual API key.\n\nThis documentation provides an overview of the available endpoints and their request details for the BULK SMS API.\n\nLet me know if you need any further assistance!\nPing me on asenasamson@gmail.com\n\n"
+    },
+    "item": [
+        {
+            "name": "Creating an account",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "https://bulk-sms-production.up.railway.app/api/v1/account/new",
+                    "path": [
+                        "api",
+                        "v1",
+                        "account",
+                        "new"
+                    ],
+                    "protocol": "https",
+                    "host": [
+                        "bulk-sms-production",
+                        "up",
+                        "railway",
+                        "app"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"phone\" : \"07XXXXXXXX\" \n}"
+                }
+            }
+        },
+        {
+            "name": "Credit money to your account",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "https://bulk-sms-production.up.railway.app/api/v1/account/pay",
+                    "path": [
+                        "api",
+                        "v1",
+                        "account",
+                        "pay"
+                    ],
+                    "protocol": "https",
+                    "host": [
+                        "bulk-sms-production",
+                        "up",
+                        "railway",
+                        "app"
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "apikey",
+                        "value": "addyourapikeyhere"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"phone\": \"07XXXXXXXX\",\n  \"amount\": 50\n}"
+                }
+            }
+        },
+        {
+            "name": "Check your account balance",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "https://bulk-sms-production.up.railway.app/api/v1/account/balance",
+                    "path": [
+                        "api",
+                        "v1",
+                        "account",
+                        "balance"
+                    ],
+                    "protocol": "https",
+                    "host": [
+                        "bulk-sms-production",
+                        "up",
+                        "railway",
+                        "app"
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "apikey",
+                        "value": "addyourapikeyhere"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"phone\": \"07XXXXXXXX\"\n}"
+                }
+            }
+        },
+        {
+            "name": "Send a message to one recipient",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "https://bulk-sms-production.up.railway.app/api/v1/sms/send",
+                    "path": [
+                        "api",
+                        "v1",
+                        "sms",
+                        "send"
+                    ],
+                    "protocol": "https",
+                    "host": [
+                        "bulk-sms-production",
+                        "up",
+                        "railway",
+                        "app"
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "apikey",
+                        "value": "addyourapikeyhere"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"phone\": \"07XXXXXXXX\",\n  \"message\": \"Hello there !\",\n  \"recipient\": [\"07XXXXXXXX\"]\n}"
+                }
+            }
+        },
+        {
+            "name": "Send a message to many recipients",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "https://bulk-sms-production.up.railway.app/api/v1/sms/send",
+                    "path": [
+                        "api",
+                        "v1",
+                        "sms",
+                        "send"
+                    ],
+                    "protocol": "https",
+                    "host": [
+                        "bulk-sms-production",
+                        "up",
+                        "railway",
+                        "app"
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "apikey",
+                        "value": "addyourapikeyhere"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"phone\": \"07XXXXXXXX\",\n  \"message\": \"Hello there !\",\n  \"recipient\": [\"07XXXXXXXX\",\"07XXXXXXXX\"]\n}"
+                }
+            }
+        }
+    ]
+}
