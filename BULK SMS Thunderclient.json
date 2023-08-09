@@ -1,0 +1,130 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "BULK SMS",
+    "dateExported": "2023-08-09T14:51:07.735Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "e656581c-5dcb-402e-b73f-508b542d55fd",
+            "colId": "e509a68f-043e-4624-a7b0-e79906c04727",
+            "containerId": "",
+            "name": "Creating an account",
+            "url": "https://bulk-sms-production.up.railway.app/api/v1/account/new",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-08-09T14:02:44.479Z",
+            "modified": "2023-08-09T14:03:33.721Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"phone\" : \"07XXXXXXXX\" \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "71ede054-4ed8-420f-8230-5f08bcd69621",
+            "colId": "e509a68f-043e-4624-a7b0-e79906c04727",
+            "containerId": "",
+            "name": "Credit money to your account",
+            "url": "https://bulk-sms-production.up.railway.app/api/v1/account/pay",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-08-09T14:08:08.450Z",
+            "modified": "2023-08-09T14:10:01.186Z",
+            "headers": [
+                {
+                    "name": "apikey",
+                    "value": "addyourapikeyhere"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"phone\": \"07XXXXXXXX\",\n  \"amount\": 50\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "29e0d448-d8e9-492f-9048-e8cfea55e3f9",
+            "colId": "e509a68f-043e-4624-a7b0-e79906c04727",
+            "containerId": "",
+            "name": "Check your account balance",
+            "url": "https://bulk-sms-production.up.railway.app/api/v1/account/balance",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-08-09T14:11:18.758Z",
+            "modified": "2023-08-09T14:12:07.705Z",
+            "headers": [
+                {
+                    "name": "apikey",
+                    "value": "addyourapikeyhere"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"phone\": \"07XXXXXXXX\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b87bdb25-e071-4f57-943b-cad40cc7c171",
+            "colId": "e509a68f-043e-4624-a7b0-e79906c04727",
+            "containerId": "",
+            "name": "Send a message to one recipient",
+            "url": "https://bulk-sms-production.up.railway.app/api/v1/sms/send",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-08-09T14:14:53.068Z",
+            "modified": "2023-08-09T14:39:01.249Z",
+            "headers": [
+                {
+                    "name": "apikey",
+                    "value": "addyourapikeyhere"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"phone\": \"07XXXXXXXX\",\n  \"message\": \"Hello there !\",\n  \"recipient\": [\"07XXXXXXXX\"]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9f3f03d0-f9eb-4cf3-a980-9aec67bd6441",
+            "colId": "e509a68f-043e-4624-a7b0-e79906c04727",
+            "containerId": "",
+            "name": "Send a message to many recipients",
+            "url": "https://bulk-sms-production.up.railway.app/api/v1/sms/send",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-08-09T14:35:37.259Z",
+            "modified": "2023-08-09T14:39:04.131Z",
+            "headers": [
+                {
+                    "name": "apikey",
+                    "value": "addyourapikeyhere"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"phone\": \"07XXXXXXXX\",\n  \"message\": \"Hello there !\",\n  \"recipient\": [\"07XXXXXXXX\",\"07XXXXXXXX\"]\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "docs": "# BULK SMS API Documentation\n\n## Creating an account\n\n### Request\n\n- Method: POST\n- URL: `https://bulk-sms-production.up.railway.app/api/v1/account/new`\n\n#### Body\n\n```json\n{\n\"phone\": \"07XXXXXXXX\"\n}\n```\n\n## Credit money to your account\n\n### Request\n\n- Method: POST\n- URL: `https://bulk-sms-production.up.railway.app/api/v1/account/pay`\n\n#### Headers\n\n- apikey: addyourapikeyhere\n\n#### Body\n\n```json\n{\n\"phone\": \"07XXXXXXXX\",\n\"amount\": 50\n}\n```\n\n## Check your account balance\n\n### Request\n\n- Method: POST\n- URL: `https://bulk-sms-production.up.railway.app/api/v1/account/balance`\n\n#### Headers\n\n- apikey: addyourapikeyhere\n\n#### Body\n\n```json\n{\n\"phone\": \"07XXXXXXXX\"\n}\n```\n\n## Send a message to one recipient\n\n### Request\n\n- Method: POST\n- URL: `https://bulk-sms-production.up.railway.app/api/v1/sms/send`\n\n#### Headers\n\n- apikey: addyourapikeyhere\n\n#### Body\n\n```json\n{\n\"phone\": \"07XXXXXXXX\",\n\"message\": \"Hello there !\",\n\"recipient\": [\"07XXXXXXXX\"]\n}\n```\n\n## Send a message to many recipients\n\n### Request\n\n- Method: POST\n- URL: `https://bulk-sms-production.up.railway.app/api/v1/sms/send`\n\n#### Headers\n\n- apikey: addyourapikeyhere\n\n#### Body\n\n```json\n{\n\"phone\": \"07XXXXXXXX\",\n\"message\": \"Hello there !\",\n\"recipient\": [\"07XXXXXXXX\", \"07XXXXXXXX\"]\n}\n```\n\n\n\n## Side Notes\nPlease note that the `addyourapikeyhere` value in the headers should be replaced with your actual API key.\n\nThis documentation provides an overview of the available endpoints and their request details for the BULK SMS API.\n\nLet me know if you need any further assistance!\nPing me on asenasamson@gmail.com\n\n",
+        "options": {
+            "baseUrl": "https://bulk-sms-production.up.railway.app/api/v1"
+        }
+    }
+}
