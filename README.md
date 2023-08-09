@@ -101,6 +101,7 @@
 ## Side Notes
 Please note that the `addyourapikeyhere` value in the headers should be replaced with your actual API key.
 
+I have added api collections for both Thunderclient and Postman, feel free to download and import them respectively.
 This documentation provides an overview of the available endpoints and their request details for the BULK SMS API.
 
 Let me know if you need any further assistance!
