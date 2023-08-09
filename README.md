@@ -1,5 +1,8 @@
 # BULK SMS API Documentation
 
+## Important Information 
+- Costs KES. 0.6 per sms 
+
 ## Creating an account
 
 ### Request
