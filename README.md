@@ -8,6 +8,7 @@
 - URL: `https://bulk-sms-production.up.railway.app/api/v1/account/new`
 
 #### Body
+- Should be a Safaricom number.
 
 ```json
 {
@@ -99,7 +100,7 @@
 
 
 ## Side Notes
-- Please note that the `addyourapikeyhere` value in the headers should be replaced with your actual API key.
+- Please note that the `addyourapikeyhere` value in the headers should be replaced with your actual API key, the phone passed in the body should be a Safaricom number.
 
 - I have added api collections for both Thunderclient and Postman, feel free to download and import them respectively.
 
