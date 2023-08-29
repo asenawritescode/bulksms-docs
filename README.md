@@ -1,7 +1,9 @@
 # BULK SMS API Documentation
 
 ## Important Information 
-- Costs KES. 0.6 per sms 
+- Costs KES. 0.6 per sms
+- Cost KES. 0.3 per Whatsapp Message
+- The recipients in the Whatsapp APi only accepts the format "2547XXXXXXXX"
 
 ## Creating an account
 
@@ -58,7 +60,7 @@
 }
 ```
 
-## Send a message to one recipient
+## Send an SMS message to one recipient
 
 ### Request
 
@@ -79,7 +81,7 @@
 }
 ```
 
-## Send a message to many recipients
+## Send an SMS message to many recipients
 
 ### Request
 
@@ -100,7 +102,47 @@
 }
 ```
 
+## Send a Whatsapp message to one recipient
 
+### Request
+
+- Method: POST
+- URL: `[https://bulk-sms-production.up.railway.app/api/v1/whatsapp/send](https://bulk-sms-production.up.railway.app/api/v1/whatsapp/send)`
+
+#### Headers
+
+- apikey: addyourapikeyhere
+
+#### Body
+
+```json
+{
+"phone": "07XXXXXXXX",
+"message": "Hello there !",
+"recipient": ["2547XXXXXXXX"]
+}
+```
+
+## Send a Whatsapp message to many recipients
+
+### Request
+
+- Method: POST
+- URL: `[https://bulk-sms-production.up.railway.app/api/v1/whatsapp/send](https://bulk-sms-production.up.railway.app/api/v1/whatsapp/send)`
+
+#### Headers
+
+- apikey: addyourapikeyhere
+
+#### Body
+
+```json
+{
+"phone": "07XXXXXXXX",
+"message": "Hello there !",
+"recipient": ["2547XXXXXXXX", "2547XXXXXXXX"]
+}
+```
 
 ## Side Notes
 - Please note that the `addyourapikeyhere` value in the headers should be replaced with your actual API key, the phone passed in the body should be a Safaricom number.
