@@ -107,7 +107,7 @@
 ### Request
 
 - Method: POST
-- URL: `[https://bulk-sms-production.up.railway.app/api/v1/whatsapp/send](https://bulk-sms-production.up.railway.app/api/v1/whatsapp/send)`
+- URL: `https://bulk-sms-production.up.railway.app/api/v1/whatsapp/send`
 
 #### Headers
 
@@ -128,7 +128,7 @@
 ### Request
 
 - Method: POST
-- URL: `[https://bulk-sms-production.up.railway.app/api/v1/whatsapp/send](https://bulk-sms-production.up.railway.app/api/v1/whatsapp/send)`
+- URL: `https://bulk-sms-production.up.railway.app/api/v1/whatsapp/send`
 
 #### Headers
 
