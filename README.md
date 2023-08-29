@@ -3,7 +3,7 @@
 ## Important Information 
 - Costs KES. 0.6 per sms
 - Cost KES. 0.3 per Whatsapp Message
-- The recipients in the Whatsapp APi only accepts the format "2547XXXXXXXX"
+- The recipients in the Whatsapp API only accepts the format "2547XXXXXXXX"
 
 ## Creating an account
 
