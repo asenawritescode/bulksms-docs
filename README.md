@@ -10,7 +10,7 @@
 ### Request
 
 - Method: POST
-- URL: `https://bulk-sms-production.up.railway.app/api/v1/account/new`
+- URL: `https://bulksms-asenawritescode.koyeb.app/api/v1/account/new`
 
 #### Body
 - Should be a Safaricom number.
@@ -26,7 +26,7 @@
 ### Request
 
 - Method: POST
-- URL: `https://bulk-sms-production.up.railway.app/api/v1/account/pay`
+- URL: `https://bulksms-asenawritescode.koyeb.app/api/v1/account/pay`
 
 #### Headers
 
@@ -46,7 +46,7 @@
 ### Request
 
 - Method: POST
-- URL: `https://bulk-sms-production.up.railway.app/api/v1/account/balance`
+- URL: `https://bulksms-asenawritescode.koyeb.app/api/v1/account/balance`
 
 #### Headers
 
@@ -65,7 +65,7 @@
 ### Request
 
 - Method: POST
-- URL: `https://bulk-sms-production.up.railway.app/api/v1/sms/send`
+- URL: `https://bulksms-asenawritescode.koyeb.app/api/v1/sms/send`
 
 #### Headers
 
@@ -86,7 +86,7 @@
 ### Request
 
 - Method: POST
-- URL: `https://bulk-sms-production.up.railway.app/api/v1/sms/send`
+- URL: `https://bulksms-asenawritescode.koyeb.app/api/v1/sms/send`
 
 #### Headers
 
@@ -107,7 +107,7 @@
 ### Request
 
 - Method: POST
-- URL: `https://bulk-sms-production.up.railway.app/api/v1/whatsapp/send`
+- URL: `https://bulksms-asenawritescode.koyeb.app/api/v1/whatsapp/send`
 
 #### Headers
 
@@ -128,7 +128,7 @@
 ### Request
 
 - Method: POST
-- URL: `https://bulk-sms-production.up.railway.app/api/v1/whatsapp/send`
+- URL: `https://bulksms-asenawritescode.koyeb.app/api/v1/whatsapp/send`
 
 #### Headers
 
